@@ -1,0 +1,24 @@
+{
+  "name": "autoloader",
+  "version": "0.0.1",
+  "author": "Timo Mühlbach <anticom@hotmail.de>",
+  "description": "an experimental autoloader",
+  "contributors": [ 
+    {
+      "name": "Timo Mühlbach",
+      "email": "anticom@hotmail.de"
+    } 
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Anticom/autoloader.git"
+  },
+  "keywords": [
+    "util",
+    "autoloading"
+  ],
+  "license": "MIT",
+  "engines": {
+    "node": ">=0.10"
+  }
+}
