@@ -1,13 +1,20 @@
 var AutoLoader = require('./lib/').AutoLoader;
-
 var i = new AutoLoader();
+
+i.require('./my/test/namespace/file')();
+
+i.require('./my/./messy-path/../test/namespace/file')();
+
+i.require('my_test_namespace_file')();
+
+i.use('my_test_namespace_file');
+i.require('file');
 
 i.use('my_test_namespace_file', 'app');
 i.require('app')();
 
 /*
 //misc tests:
-var i = new AutoLoader();
 var nr = i.namespaceResolver;
 
 i.use('my_namespace_cls');
